@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>Задание 1</title>
+</head>
+<body class="root">
+<main>
+     <!--Гиперссылки-->
+        <h2>Гиперссылки</h2>
+    <ol>
+        <li><a href="http://kubsu.ru"> Абсолютная гиперссылка на главную страницу КУБГУ</a></li>
+        <li><a href="http://kubsu.ru"> Абсолютная гиперссылка на главную страницу КУБГУ</a></li>
+        <li><a href="ea63fca0df52e1734bd67e75ea7b823e25539e90image.jpg"><img class="imgHref" src="ea63fca0df52e1734bd67e75ea7b" alt="Цветочек"></a></li>
+        <li><a href="/page2">Сокращённая ссылка на внутреннюю страницу</a></li>
+        <li><a href="./index.html">Сокращённая ссылка на главную страницу</a></li>
+        <li><a href="#bottom">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="http://yandex.ru/search/?text=russia&lr=56&clid=456889">Ccылки с тремя параметрами в URL</a></li>
+        <li> <a href="https://www.kubsu.ru/index.php/?id=1234">Ссылка с параметром id в URL</a></li>
+        <li><a href="./page2.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href=”./about/about.html”>Относительная ссылка на страницу в каталоге about</a></li> 
+        <li><a href="./new11/new11.//html">Относительная ссылка уровнем выше </a></li>
+        <li><a href="./12/12.2/new12.html">Относительная ссылка двумя уровнями выше</a></li>
+        <li> <p> Контекстная <a id="aInText" href="https://kubsu.ru/">cсылка  </a></p></li>
+        <li> <a href="https://www.kubsu.ru/#section-content">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li>
+                <img src="https://github.com/ArtyomPrasol/ArtyomPrasol.github.io/blob/main/images.png?raw=true" usemap="#figuri" alt="Фигуры">
+                <map name="figuri">
+                    <area shape="rect" coords="15,15,55,55" href="red.html" alt="красный" />
+                    <area shape="circle" coords="100,75,50" href="green.html" alt="зеленый" />
+                </map>
+            </li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a>Без href</a> </li>
+        <li><a href="index.html" rel="nofollow">Не перейти</a></li>
+         <li><noindex--><a href="https://example.com">Запрещённая для индексации поисковиками</a></noindex--></li>
+            <li>Список ссылок<ol>
+                <li><a title="вторая страница" href="page2.html">ссылка в списке 1</a></li>
+                <li><a title="страница на два каталога ниже" href="./level1/level2/page3.html">ссылка в списке 2</a></li>
+                <li><a title="о нас" href="./about/about.html">ссылка в списке 3</a></li>
+            </ol>
+        </li>
+        <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">Ссылка на файл на сервере FTP</a></li>
+
+         <!--Форма-->
+        <h2>Форма</h2>
+        <form action="/" method="POST"> 
+            <label>
+                Имя:
+                <input name="Имя" value="Введите Ваше имя" />
+            </label>
+            <label>
+                <br>
+                <br/>
+                Номер телефона:
+                <input name="рhone" type="tel" placeholder="+7(xxx)xxxxxxx">
+            </label>
+            <br>
+            <br/>
+                   Е-mail:
+                <br>
+                <input name="Почта" type="email" placeholder="Ваш е-mail">
+            <br>
+            <br />
+            <label>
+                Дата рождения:
+                <br>
+                <input name="Дата" type="date" value="2022-09-08">
+            </label>
+            <br>
+            <br />
+            Пол
+            <br />
+            <label>
+                <input type="radio" name="radio1" checked="checked" value="Мужской" />
+                Мужской
+            </label>
+            <label>
+                <input type="radio" name="radio1" value="Женский" />
+                Женский
+            </label>
+            <br />
+            <br />
+            <laber>
+            <br />
+            Любимый язык программирования?
+            <br />
+            <select name="name-super-3[]" multiple="multiple">
+                <option value="Pascal" selected="selected">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScrict</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Hascel">Hascel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+                
+
+            </select>
+            <br />
+            <br />
+            Биография:
+            <label>
+                <br />
+                <textarea name="field-name-2">Биография</textarea>
+            </label>s
+            <br />
+            <label>
+            <br />
+                <input type="checkbox" checked="checked" name="check1" /> С контактом ознакомлен(а)
+            </label>
+            <br />
+            <br />
+            Отправка формы
+            <input type="submit" value="Сохранить" />
+        </form>
+    </header
